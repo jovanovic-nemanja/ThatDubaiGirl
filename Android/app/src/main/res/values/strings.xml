@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ThatDubaiGirl</string>
+    <string name="internet">Make sure your device is connected to the internet.</string>
+    <string name="commn_url">https://tdguae.com/api/v1/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

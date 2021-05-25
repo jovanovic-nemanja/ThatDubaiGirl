@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Activity.DiscountsList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp24"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:onClick="back"
+            app:srcCompat="@drawable/ic_back_a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tofino_medium"
+                android:gravity="center"
+                android:text="Discounts"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dp10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/l_darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:fontFamily="@font/tofino_regular"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="All"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:background="@color/bule" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recymainCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="4dp"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/llSearchingId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ivSearchId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp15">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp15"
+                                android:layout_height="@dimen/dp15"
+                                android:layout_gravity="center"
+                                android:src="@drawable/search_icon" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/etSearchId"
+                            android:layout_width="367dp"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_weight="1"
+                            android:background="#0000"
+                            android:fontFamily="@font/tofino_regular"
+                            android:gravity="center_vertical"
+                            android:hint="Search Discounts"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/dp10"
+                            android:singleLine="true"
+                            android:textColorHint="@color/loginblack"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subcatlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

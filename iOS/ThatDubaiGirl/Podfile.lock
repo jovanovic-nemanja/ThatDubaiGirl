@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Cosmos (23.0.0)
+  - HMSegmentedControl (1.5.6)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JGProgressHUD (2.2)
+  - ObjectMapper (4.2.0)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos (~> 23.0)
+  - HMSegmentedControl
+  - IQKeyboardManagerSwift
+  - JGProgressHUD
+  - ObjectMapper
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - HMSegmentedControl
+    - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - ObjectMapper
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+
+PODFILE CHECKSUM: 58b93fabc5f560dc5d2748ec05b07c468d1516fd
+
+COCOAPODS: 1.10.1

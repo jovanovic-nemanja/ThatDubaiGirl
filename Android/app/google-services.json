@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1052542544576",
+    "project_id": "thatdubaigirl-70065",
+    "storage_bucket": "thatdubaigirl-70065.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052542544576:android:a6003b3a426c5f727c9b25",
+        "android_client_info": {
+          "package_name": "com.thatdubaigirl.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052542544576-gpb009becraksf651ho9ie7eemcq9lvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thatdubaigirl.com",
+            "certificate_hash": "88398cd32fbdc2d2b6e2581291fc433370b165a1"
+          }
+        },
+        {
+          "client_id": "1052542544576-rp3t7jj4d7dliivqv73u2u8iptt79cvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACssQ1l1kpy-E5WRoxMCV4l1EBDIgsUg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052542544576-rp3t7jj4d7dliivqv73u2u8iptt79cvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

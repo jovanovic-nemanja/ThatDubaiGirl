@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Activity.RedeemDiscount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp24"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:onClick="back"
+            app:srcCompat="@drawable/ic_back_a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tofino_medium"
+                android:gravity="center"
+                android:text="Discounts"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dp10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/l_darkgray" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/signup_button_a"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/logo" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivprofile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/profile" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tofino_medium"
+                    android:gravity="center"
+                    android:text="Discounts"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tofino_regular"
+                    android:gravity="center"
+                    android:text="Membership"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txtmembernumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/tofino_bold"
+                    android:gravity="center"
+                    android:text="Discounts"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+               android:layout_marginTop="20dp"
+                android:fontFamily="@font/tofino_medium"
+                android:gravity="center"
+                android:text="Discounts"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/ivimage"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/tofino_medium"
+                android:gravity="center"
+                android:text="Present ID to redeem discount"
+                android:textColor="@color/pink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

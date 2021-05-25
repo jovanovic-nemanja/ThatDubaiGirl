@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Fargment.WriteReviewFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tofino_medium"
+                    android:gravity="center"
+                    android:text="      "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tofino_medium"
+                android:gravity="center"
+                android:text="Write a Review"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtsubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tofino_medium"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/l_darkgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/comment_rating"
+            android:theme="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:numStars="5"
+            android:rating="4"
+            android:isIndicator="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/tofino_regular"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Tap a Star to Rate"
+            android:textColor="@color/gray_a"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/edReview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/tofino_medium"
+            android:hint="Review"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp8"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp8"
+            android:singleLine="true"
+            android:textColor="@color/darkblack"
+            android:textColorHint="@color/darkblack"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+</LinearLayout>

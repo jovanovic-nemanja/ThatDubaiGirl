@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Activity.DetalisPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/h1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:onClick="back"
+                app:srcCompat="@drawable/ic_back_a" />
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dp10" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/l_darkgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tofino_medium"
+                android:singleLine="true"
+                android:text="Home Cleaning"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slider" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/ivbanner"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/bann_icon" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivimage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp" />
+
+                <TextView
+                    android:id="@+id/txtvendername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tofino_regular"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="288 Mcclure Count, Arkanss"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtcatname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/tofino_bold"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="catname"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtOverView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tofino_bold"
+                android:gravity="center"
+                android:text="OverView"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtReviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tofino_bold"
+                android:gravity="center"
+                android:text="Reviews"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/bule" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lloverview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtdescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/tofino_medium"
+                        android:text="Reviews"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/tofino_bold"
+                        android:gravity="center"
+                        android:text="Contact Vender"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/ivcall"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/call_icon" />
+                        <ImageView
+                            android:id="@+id/ivinsta"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/insta_a" />
+                        <ImageView
+                            android:id="@+id/ivcrome"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/crome_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:divider="@null"
+                android:visibility="gone"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <TextView
+                android:id="@+id/ivNoDataId"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/tofino_regular"
+                android:textColor="@color/white"
+                android:text="No reviews yet."
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/txtbtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/login_button"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/tofino_regular"
+            android:gravity="center"
+            android:hint="Redem Discount"
+            android:paddingTop="@dimen/dp8"
+            android:paddingBottom="@dimen/dp8"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/dp15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

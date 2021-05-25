@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="verylight">#7AECECEC</color>
+    <color name="transparant">#00ECECEC</color>
+    <color name="lightblack">#7c7c7c</color>
+    <color name="darkblack">#666666</color>
+    <color name="loginblack">#555657</color>
+    <color name="yellow">#FFEB00</color>
+    <color name="lightyellow">#FFFF0D</color>
+    <color name="yellowdark">#FCEB0A</color>
+    <color name="highblack">#000000</color>
+    <color name="lightgray">#f1f1f1</color>
+    <color name="lightwhite">#CEF1F1F1</color>
+    <color name="darkgray">#dadada</color>
+    <color name="l_darkgray">#aaa3a3</color>
+    <color name="font_light_gray">#c5c5c5</color>
+    <color name="dark_light_gray">#EDEDED</color>
+    <color name="placeholder_bg">#C6C6C6</color>
+    <color name="logo_color">#FD6C57</color>
+    <color name="gray">#e0e0e1</color>
+    <color name="rate">#FE9654</color>
+    <color name="Indicator_tabTextColor">#2e332d</color>
+    <color name="red">#FF2929</color>
+    <color name="gray_a">#E8E4E4</color>
+    <color name="bule">#1593F8</color>
+    <color name="pink">#FF00FF</color>
+
+</resources>
